@@ -1,8 +1,7 @@
-# Raspberry Pi で動画をブラウザからコントロール
+# Raspberry Pi でブラウザでファイルを選んでテレビで動画再生
 
-Raspberry Piを使い動画を再生します。
-
-ブラウザでファイルを選択でき、簡単な再生コントロールができます。
+Raspberry Pi でブラウザでファイルを選んでテレビで動画再生させる簡易的なツールです。
+簡単な再生コントロールができます。
 
 ## 必要なもの
 
@@ -15,6 +14,8 @@ Raspberry Piを使い動画を再生します。
 
 	disable_overscan=1
 	gpu_mem=128
+
+参考: [Raspberry Pi ModelB+を買った](http://blog.mamemomonga.com/2015/01/raspberry-pi-modelb.html)
 
 ## インストール方法
 
@@ -30,13 +31,17 @@ Raspberry Piを使い動画を再生します。
 	$ vim rasp-video-loader.pl
 	my $video_dir='/home/pi/movie';
 
-## 起動
+## 起動と使い方
 
-起動時に指定フォルダの動画ファイルを検索します。
+以下のコマンドを実行します。
 
 	$ ./start.sh
 
-CTRL+Cで終了です。
+起動時に指定フォルダの動画ファイルを検索します。
+
+	Server available at http://127.0.0.1:3000.
+
+と表示されたら待機状態です。CTRL+Cで終了します。
 
 	http://[Raspberry Piのアドレス]:3000/
 
