@@ -12,7 +12,7 @@ Raspberry Pi でブラウザでファイルを選んでテレビで動画再生�
 
 ## やっておいたほうがいい設定
 
-/boot/config.txtの調整
+/boot/config.txtの調整、再起動が必要
 
 	disable_overscan=1
 	gpu_mem=128
