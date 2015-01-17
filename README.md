@@ -25,6 +25,7 @@ Raspberry Pi でブラウザでファイルを選んでテレビで動画再生�
 	$ git clone https://github.com/mamemomonga/rasp-video-loader.git
 	$ cd rasp-video-loader
 	$ carton install
+	$ mkdir public
 	$ curl -o public/jquery-2.min.js http://code.jquery.com/jquery-2.1.3.min.js
 
 ## 設定の調整
