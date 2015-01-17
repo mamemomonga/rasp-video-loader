@@ -4,9 +4,11 @@ use Mojolicious::Lite;
 use File::Find;
 use Mojo::Util qw(b64_encode b64_decode);
 
-# データディレクトリ
-# 最後に / が必要
+# データディレクトリ(最後に / が必要)
 my $video_dir='/home/pi/movie/';
+
+pipe(my $readh,my $writeh);
+select($writeh); $|=1; select(STDOUT);
 
 say "search";
 my @filelist=();
@@ -31,9 +33,6 @@ my @filelist=();
 	@filelist=sort { $a->[0] cmp $b->[0] } @filelist;
 }
 say "ready";
-
-pipe(my $readh,my $writeh);
-select($writeh); $|=1; select(STDOUT);
 
 get '/' => sub {
 	my $c = shift;
@@ -75,7 +74,7 @@ get '/-control/(:command)' => sub {
 		$c->render('text'=>'error');
 		return;
 	}
-    print $writeh $command;
+	print $writeh $command;
 	$c->render('text'=>'success');
 };
 
