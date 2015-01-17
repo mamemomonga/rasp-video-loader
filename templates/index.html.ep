@@ -1,0 +1,6 @@
+% layout 'default';
+% title 'Welcome';
+
+% foreach(@{ $filelist }) {
+<a href="/-play/<%= $_->[1] %>"><%= $_->[0] %></a><br>
+% }
