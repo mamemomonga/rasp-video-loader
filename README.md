@@ -7,6 +7,8 @@ Raspberry Pi でブラウザでファイルを選んでテレビで動画再生�
 
 * Raspberry Pi Model B(ネットワーク接続が必要)
 * Raspian
+* テレビまたはモニタ(HDMI接続が望ましい)
+* ブラウザ(jqueryが動くもの)
 
 ## やっておいたほうがいい設定
 
@@ -23,6 +25,7 @@ Raspberry Pi でブラウザでファイルを選んでテレビで動画再生�
 	$ git clone https://github.com/mamemomonga/rasp-video-loader.git
 	$ cd rasp-video-loader
 	$ carton install
+	$ curl -o public/jquery-2.min.js http://code.jquery.com/jquery-2.1.3.min.js
 
 ## 設定の調整
 

@@ -1,2 +1,4 @@
 .carton/
 local/
+public/jquery-2.min.js
+
