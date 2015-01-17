@@ -55,40 +55,6 @@
          "target" : "IO::Socket::IP",
          "version" : "0.36"
       },
-      "IPC::Run3" : {
-         "dist" : "IPC-Run3-0.048",
-         "mymeta" : {},
-         "name" : "IPC::Run3",
-         "pathname" : "R/RJ/RJBS/IPC-Run3-0.048.tar.gz",
-         "provides" : {
-            "IPC::Run3" : {
-               "file" : "IPC/Run3.pm",
-               "version" : "0.048"
-            },
-            "IPC::Run3::ProfArrayBuffer" : {
-               "file" : "IPC/Run3/ProfArrayBuffer.pm",
-               "version" : "0.048"
-            },
-            "IPC::Run3::ProfLogReader" : {
-               "file" : "IPC/Run3/ProfLogReader.pm",
-               "version" : "0.048"
-            },
-            "IPC::Run3::ProfLogger" : {
-               "file" : "IPC/Run3/ProfLogger.pm",
-               "version" : "0.048"
-            },
-            "IPC::Run3::ProfPP" : {
-               "file" : "IPC/Run3/ProfPP.pm",
-               "version" : "0.048"
-            },
-            "IPC::Run3::ProfReporter" : {
-               "file" : "IPC/Run3/ProfReporter.pm",
-               "version" : "0.048"
-            }
-         },
-         "target" : "IPC::Run3",
-         "version" : "0.048"
-      },
       "Mojolicious" : {
          "dist" : "Mojolicious-5.72",
          "mymeta" : {},
